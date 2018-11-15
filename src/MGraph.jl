@@ -30,8 +30,8 @@ function mgraph{V,T}(g::AbstractGraph{V}, edge_weights::Vector{T}=ones(num_edges
 
 
     total_size = 0
-    strength_in = Array(T, n)
-    strength_out = Array(T, n)
+    strength_in = zeros(n)
+    strength_out = zeros(n)
 
     for u in vertices(g)
         u_idx = vertex_index(u,g)
