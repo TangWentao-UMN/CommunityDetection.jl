@@ -1,5 +1,5 @@
 # the root type of all partitions
-abstract AbstractPartition{V}
+abstract type AbstractPartition{V} end
 
 "Renumber the communities so that they are numbered 0,...,q-1 where q is the number of communities."
 function renumber_communities!{V}(partition::AbstractPartition{V})
